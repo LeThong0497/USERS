@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Update</h2>
+        <form class="form-horizontal" method="POST" action="/updateUser">
+            <div class="form-group">
+                <label for="phone">PhoneNumber :</label>
+                <input type="number" class="form-control" id="email" placeholder="" value="<%=data.Item.PhoneNumber%>" name="phone">
+              </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="<%=data.Item.Email%>" name="email">
+            </div>
+            <div class="form-group">
+                <label for="name">FullName :</label>
+                <input type="text" class="form-control" id="name" placeholder="<%=data.Item.FullName%>" name="fullname">
+              </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" placeholder="<%=data.Item.PassWord%>" name="password">
+            </div>
+            <!-- <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
+            </div> -->
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>
